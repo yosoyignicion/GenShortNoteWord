@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Productividad</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>GenShortNoteWord</h1>
+    <h2>Herramientas para mejorar tu productividad.</h2>
+    <h3>Bienvenido a tu panel de herramientas.</h3> 
+    </p>En este panel puedes generar contraseñas seguras, acortar URLs y tomar notas rápidas.</p>
+
+    <!-- Password Generator -->
+    <section class="tool">
+      <h2>Password Generator Pro</h2>
+      <div>
+        <label for="length">Longitud:</label>
+        <input type="number" id="length" value="12" min="6" max="32">
+      </div>
+      <div>
+        <label><input type="checkbox" id="uppercase" checked> Mayúsculas</label>
+        <label><input type="checkbox" id="lowercase" checked> Minúsculas</label>
+        <label><input type="checkbox" id="numbers" checked> Números</label>
+        <label><input type="checkbox" id="symbols"> Símbolos</label>
+      </div>
+      <button id="generate-password">Generar Contraseña</button>
+      <p id="password-output"></p>
+      <p id="feedback" class="hidden">Contraseña copiada al portapapeles</p>
+    </section>
+
+    <!-- URL Shortener -->
+    <section class="tool">
+      <h2>URL Shortener</h2>
+      <div>
+        <label for="url-input">URL Larga:</label>
+        <input type="text" id="url-input" placeholder="Ingresa una URL válida">
+      </div>
+      <button id="shorten-url">Acortar URL</button>
+      <p id="shortened-url"></p>
+    </section>
+
+    <!-- Bloc de Notas -->
+    <section class="tool">
+      <h2>Bloc de Notas</h2>
+      <textarea id="note-text" placeholder="Escribe tus notas aquí..."></textarea>
+      <div class="note-actions">
+        <button id="save-note">Guardar Nota</button>
+        <button id="export-note">Exportar como .txt</button>
+      </div>
+      <p id="note-feedback" class="hidden">Nota guardada correctamente</p>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

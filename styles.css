@@ -1,0 +1,77 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 20px;
+  }
+  
+  .tool {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #f3f4f6;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    color: #1e40af;
+    margin-bottom: 15px;
+  }
+  
+  input, textarea, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button {
+    background-color: #1e40af;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1e3a8a;
+  }
+  
+  .note-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #feedback, #note-feedback {
+    color: #16a34a;
+    font-size: 14px;
+    margin-top: 10px;
+  }
